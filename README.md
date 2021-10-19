@@ -38,3 +38,5 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
 
 ### The New Blog Test
 This is linzhui's blog for gaming
+
+[20211019阅读记录](recent20211019.md)
