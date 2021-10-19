@@ -5,7 +5,7 @@ header-img: img/home-bg.jpg
 email: linzhui1323@gmail.com
 description: "什么都不会的人"
 keyword: "林大聪明，小伙子，你可真聪明啊！"
-url: "https://linzhui1323.me"              # your host, for absolute URL
+url: "linzhui1323.github.io"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Publish posts or collection documents with a future date.
@@ -72,7 +72,7 @@ netease_comment: false
 
 # Google Analytics
 ga_track_id: 'G-ZBPBC5EGTV'            # Format: UA-xxxxxx-xx
-ga_domain: https://linzhui1323.github.io
+ga_domain: linzhui1323.github.io
 
 
 
