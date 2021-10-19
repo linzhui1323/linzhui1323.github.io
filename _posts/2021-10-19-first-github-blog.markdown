@@ -7,6 +7,7 @@ author:     "Linzhui"
 catalog: false
 header-style: text
 header-img: "img/lin-post/squirrel.jpg"
+header-mask: 0.4
 tags:
 ---
 
