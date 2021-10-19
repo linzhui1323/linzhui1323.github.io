@@ -4,11 +4,10 @@ title:      "林大聪明的第一篇独立博客"
 subtitle:   "The first Github blog of fool lin"
 date:       2021-10-19 18:00:00
 author:     "Linzhui"
-catalog: false
-header-style: text
 header-img: "img/lin-post/squirrel.jpg"
 header-mask: 0.4
 tags:
+    - Start
 ---
 
 # 写在前面
