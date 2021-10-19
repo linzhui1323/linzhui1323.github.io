@@ -6,6 +6,7 @@ date:       2021-10-19 18:00:00
 author:     "Linzhui"
 catalog: false
 header-style: text
+header-img: "img/lin-post/squirrel.jpg"
 tags:
 ---
 
