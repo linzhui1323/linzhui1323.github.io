@@ -1,0 +1,61 @@
+---
+layout:     post
+title:      "2021年10月份Unity记录"
+subtitle:   "Unity，我谢谢你哈~"
+date:       2021-10-31 20:00:00
+author:     "Linzhui"
+header-img: "img/lin-post/squirrel.jpg"
+header-mask: 0.4
+tags:
+    - Shader
+    - Unity
+---
+
+ 1、2020.2版本将支持 IL2CPP 的堆栈行号
+
+[https://forum.unity.com/threads/il2cpp-missing-line-numbers-in-stack-trace.808500/#post-7600510](https://forum.unity.com/threads/il2cpp-missing-line-numbers-in-stack-trace.808500/#post-7600510)
+
+![img](/img/reads/202110/il2cpp_linenumber.jpg)
+
+<br>
+2、 Shader关键字限制
+
+2019.4.19f1之前的数量限制为256，之后的限制为384
+
+2021.2 之后的几乎无限制
+
+[https://forum.unity.com/threads/shader-keyword-system-improvements-in-2021-2-alpha.1104865/](https://forum.unity.com/threads/shader-keyword-system-improvements-in-2021-2-alpha.1104865/)
+
+![img](/img/reads/202110/shader-keywords.jpg)
+
+<br>
+3、有时候Android打包出错，可能是放在中文路径下
+
+[https://forum.unity.com/threads/build-il2cpp-errors-please-how-fix-it.492556/](https://forum.unity.com/threads/build-il2cpp-errors-please-how-fix-it.492556/)
+
+![img](/img/reads/202110/chinese-characterset.jpg)
+
+<br>
+4、加载场景时，千万别用FindXXX相关函数，可能造成闪退
+
+![img](/img/reads/202110/crash-find.png)
+
+<br>
+5、有时候IDE的调试器会有值错乱的问题，这个时候用Log会比较恰当
+
+![img](/img/reads/202110/ide-debug.png)
+
+<br>
+6、PC包分辨率设置问题
+
+Unity打包PC软件时，可以通过Build Settings->Player Settings->Resolution and Presefenbtation 设置打包的分辨率。
+然而这种设置方式仅限于第一次打包有用。后续如果想要更改分辨率，再次打包出来的还是原来的分辨率。
+
+因为第一次打包过后，Unity会自动向注册表注册打包信息。下次打包即使你重新设置也无效。
+
+解决方法有两个：
+
+1) 修改项目名称（这种方法比较草率，适合新手）
+2) 删除注册表相关信息 
+
+注册表的位置 HKEY_CURRENT_USER\Software\（公司名称）\（项目名称）
